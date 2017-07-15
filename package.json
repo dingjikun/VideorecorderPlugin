@@ -1,78 +1,17 @@
 {
-  "_args": [
-    [
-      {
-        "raw": "https://github.com/dingjikun/VideorecorderPlugin.git",
-        "scope": null,
-        "escapedName": null,
-        "name": null,
-        "rawSpec": "https://github.com/dingjikun/VideorecorderPlugin.git",
-        "spec": "git+https://github.com/dingjikun/VideorecorderPlugin.git",
-        "type": "hosted",
-        "hosted": {
-          "type": "github",
-          "ssh": "git@github.com:dingjikun/VideorecorderPlugin.git",
-          "sshUrl": "git+ssh://git@github.com/dingjikun/VideorecorderPlugin.git",
-          "httpsUrl": "git+https://github.com/dingjikun/VideorecorderPlugin.git",
-          "gitUrl": "git://github.com/dingjikun/VideorecorderPlugin.git",
-          "shortcut": "github:dingjikun/VideorecorderPlugin",
-          "directUrl": "https://raw.githubusercontent.com/dingjikun/VideorecorderPlugin/master/package.json"
-        }
-      },
-      "/Users/djk/Desktop/ionic/client_slim/node_modules"
-    ]
-  ],
-  "_from": "git+https://github.com/dingjikun/VideorecorderPlugin.git",
-  "_id": "videorecorder@0.0.1",
-  "_inCache": true,
-  "_location": "/videorecorder",
-  "_phantomChildren": {},
-  "_requested": {
-    "raw": "https://github.com/dingjikun/VideorecorderPlugin.git",
-    "scope": null,
-    "escapedName": null,
-    "name": null,
-    "rawSpec": "https://github.com/dingjikun/VideorecorderPlugin.git",
-    "spec": "git+https://github.com/dingjikun/VideorecorderPlugin.git",
-    "type": "hosted",
-    "hosted": {
-      "type": "github",
-      "ssh": "git@github.com:dingjikun/VideorecorderPlugin.git",
-      "sshUrl": "git+ssh://git@github.com/dingjikun/VideorecorderPlugin.git",
-      "httpsUrl": "git+https://github.com/dingjikun/VideorecorderPlugin.git",
-      "gitUrl": "git://github.com/dingjikun/VideorecorderPlugin.git",
-      "shortcut": "github:dingjikun/VideorecorderPlugin",
-      "directUrl": "https://raw.githubusercontent.com/dingjikun/VideorecorderPlugin/master/package.json"
-    }
-  },
-  "_requiredBy": [
-    "#USER",
-    "/"
-  ],
-  "_resolved": "git+https://github.com/dingjikun/VideorecorderPlugin.git#fb82d605e20bbdbf7aab1f5d0e0cb0811687096d",
-  "_shasum": "c2d11b5f7493acbd04bcf9ff6dc409231b7097a4",
-  "_shrinkwrap": null,
-  "_spec": "https://github.com/dingjikun/VideorecorderPlugin.git",
-  "_where": "/Users/djk/Desktop/ionic/client_slim/node_modules",
-  "author": {
-    "name": "ding"
-  },
+  "name": "videorecorder",
+  "version": "0.0.1",
+  "description": "",
   "cordova": {
     "id": "plugin-ding-videorecorder",
     "platforms": [
       "android"
     ]
   },
-  "dependencies": {},
-  "devDependencies": {},
-  "gitHead": "fb82d605e20bbdbf7aab1f5d0e0cb0811687096d",
   "keywords": [
     "ecosystem:cordova",
     "cordova-android"
   ],
-  "license": "ISC",
-  "name": "videorecorder",
-  "optionalDependencies": {},
-  "readme": "ERROR: No README data found!",
-  "version": "0.0.1"
+  "author": "ding",
+  "license": "ISC"
 }
