@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="ding-plugin-videorecorder" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+  <name>videorecorder</name>
+  <js-module name="videorecorder" src="www/videorecorder.js">
+    <clobbers target="cordova.plugins.videorecorder" />
+  </js-module>
+  <platform name="android">
+    <config-file parent="/*" target="res/xml/config.xml">
+      <feature name="videorecorder">
+        <param name="android-package" value="com.ding.plugins.videorecorder" />
+      </feature>
+    </config-file>
+    <config-file target="AndroidManifest.xml" parent="/manifest/application">
+      <activity android:screenOrientation="portrait" android:configChanges="orientation|keyboardHidden" android:name="com.ding.videorecorderlib.VideoRecorderMainActivity" android:label="videorecorderLib" android:theme="@style/AppBaseFullTheme"/>
+      <activity android:name="com.ding.videorecorderlib.SubmitActivity" android:theme="@style/AppTheme" android:configChanges="orientation|keyboardHidden|screenLayout|screenSize"></activity>
+    </config-file>
+    <config-file target="AndroidManifest.xml" parent="/manifest">
+        <!-- 网络 -->
+        <uses-permission android:name="android.permission.INTERNET"/>
+        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+        <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+        <!-- 写入sdk -->
+        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+        <!-- 读sdk -->
+        <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+        <!-- phone -->
+        <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+        <!-- camera -->
+        <uses-permission android:name="android.permission.CAMERA"/>
+        <uses-permission android:name="android.permission.FLASHLIGHT"/>
+        <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+        <uses-permission android:name="android.permission.RECORD_VIDEO"/>
+    </config-file>
+    <source-file src="src/android/videorecorder.java" target-dir="src/com/ding/plugins" />
+    <framework src="src/android/videorecorder.gradle" custom="true" type="gradleReference"/>
+    <resource-file src="src/android/videorecorderlib-release.aar" target="libs/videorecorderlib-release.aar"/>
+    <dependency id="cordova-plugin-compat" version="^1.0.0"/>
+  </platform>
+</plugin>

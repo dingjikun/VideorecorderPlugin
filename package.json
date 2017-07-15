@@ -1,0 +1,17 @@
+{
+  "name": "videorecorder",
+  "version": "0.0.1",
+  "description": "",
+  "cordova": {
+    "id": "plugin-ding-videorecorder",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "ding",
+  "license": "ISC"
+}
