@@ -6,6 +6,7 @@ if (cdvMinSdkVersion == null || Integer.parseInt(cdvMinSdkVersion) < minSdk ) {
 
 repositories{
     jcenter()
+    maven { url "https://dl.bintray.com/drummer-aidan/maven" }
     flatDir{
         dirs 'libs'
     }
